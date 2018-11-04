@@ -10,7 +10,7 @@ public class LoginOperations{
 	public void openBrowser(){
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.amazon.com");
-		driver.refresh();
-	}
+		driver.manage().window().maximize();
+		}
 	
 }
